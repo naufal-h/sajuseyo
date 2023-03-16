@@ -5,6 +5,32 @@
 .left {
   width: 50%;
 }
+.big-img {
+  width: 250px;
+}
 
 .big-img {
+  width: inherit;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.small-img {
+  width: 50px;
+  margin: auto;
+  padding: 17px;
+  padding-top: 35px;
+}
+
+.small-img {
+  width: inherit;
+  cursor: pointer;
+}
+.small-img:hover img {
+  transform: scale(1.2);
 }
