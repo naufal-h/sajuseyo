@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/login.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div id="navbar"></div>
+    </nav>
+    <main>
+      <div class="loginpagewrap page-wrapper">
+        <div class="loginformwrapper card form pages masup">
+          <form class="text-center">
+            <div class="formheader">
+              <h1 class="heading-h2-size">Sign In</h1>
+            </div>
+            <div class="layout-grid grid-1-column">
+              <input
+                type="email"
+                maxlength="256"
+                placeholder="Email"
+                name="Email"
+                class="input"
+                required=""
+              />
+              <input
+                type="password"
+                maxlength="256"
+                placeholder="Password"
+                name="Password"
+                class="input"
+                required=""
+              />
+              <div class="mg-top-14px text-center">
+                <div class="form-block form">
+                  <label class="checkbox checkbox-field">
+                    <input
+                      type="checkbox"
+                      id="checkbox"
+                      name="checkbox"
+                      data-name="Checkbox"
+                      class="checkbox-input checkbox-2"
+                    />
+                    <p class="checkbox-label form-label" for="checkbox">
+                      Remember me
+                    </p>
+                  </label>
+                </div>
+                <p><a class="fgt-pass" href="#">Forgot your password?</a></p>
+              </div>
+              <input
+                type="submit"
+                value="Sign In"
+                data-wait="Please wait..."
+                class="formbutton btn-primary button"
+              />
+            </div>
+            <p class="mg-top-12px mg-bottom-0">
+              Don't have account? <a class="sign-up" href="#">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer><div id="footer"></div></footer>
+  </body>
+</html>
