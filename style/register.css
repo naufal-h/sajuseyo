@@ -2,7 +2,7 @@
   width: 700px;
   height: 800px;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   background-color: #fafafa;
   border-radius: 12px;
   box-shadow: 0px 0px 10px 0px rgb(182, 180, 180);
@@ -107,5 +107,5 @@ pirim-2 {
   color: #1c2331;
   font-size: 14;
   font-family: "Poppins", sans-serif;
-  font-style: regular;
+  padding-top: 10px;
 }
