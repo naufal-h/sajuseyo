@@ -1,27 +1,6 @@
-:root {
-  --primary: #eab8c0;
-  --bg: #fafafa;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 400;
-  padding: 30;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--bg);
-  color: #1c2331;
-}
-
 .register-box {
   width: 700px;
-  height: auto;
+  height: 800px;
   margin: auto;
   padding-bottom: 50px;
   background-color: #fafafa;
@@ -30,9 +9,16 @@ body {
 }
 
 h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 form {
@@ -45,10 +31,6 @@ form label {
   display: flex;
   margin-top: 20px;
   font-size: 16px;
-}
-
-a {
-  color: #eab8c0;
 }
 
 input[type="checkbox"] {
