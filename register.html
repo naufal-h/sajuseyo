@@ -27,7 +27,7 @@
 
     <!-- my style -->
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/register.css" />
+    <link rel="stylesheet" href="style/form.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -37,34 +37,82 @@
     <header>
       <div id="navbar"></div>
     </header>
-    <div class="register-box">
-      <h1>Sign Up</h1>
-      <form>
-        <label>*Full Name</label>
-        <input type="text" placeholder="" />
-        <label>*Email</label>
-        <input type="Email" placeholder="" />
-        <label>*Phone Number</label>
-        <input type="Phone Number" placeholder="" />
-        <label>*Password</label>
-        <input type="Password" placeholder="" />
-        <label>*Confirm Password</label>
-        <input type="Password" placeholder="" />
-        <label class="checkbox checkbox-field">
-          <input
-            type="checkbox"
-            id="checkbox"
-            name="checkbox"
-            data-name="Checkbox"
-            class="checkbox-input checkbox-2"
-          />
-          <span class="checkbox-label form-label" for="checkbox">
-            Agree with <a class="tnc">Terms &amp; Conditions</a>
-          </span>
-        </label>
-        <input type="button" value="Sign Up" />
-      </form>
-      <p class="pirim-2">Already have an account? <a class="tnc">Sign In</a></p>
+    <div class="formpagewrap page-wrapper">
+      <div class="formwrapper card form pages masup">
+        <form class="text-center">
+          <div class="formheader">
+            <h1 class="heading-h2-size">Sign Up</h1>
+          </div>
+          <div class="layout-grid grid-1-column">
+            <label>*Full Name</label>
+            <input
+              type="name"
+              maxlength="256"
+              name="name"
+              class="input"
+              required=""
+            />
+            <label>*Email</label>
+            <input
+              type="email"
+              maxlength="256"
+              name="email"
+              class="input"
+              required=""
+            />
+            <label>*Phone Number</label>
+            <input
+              type="phone"
+              maxlength="256"
+              name="phone"
+              class="input"
+              required=""
+            />
+            <label>*Password</label>
+            <input
+              type="password"
+              maxlength="256"
+              name="password"
+              class="input"
+              required=""
+            />
+            <label>*Confirm Password</label>
+            <input
+              type="repassword"
+              maxlength="256"
+              name="repaassword"
+              class="input"
+              required=""
+            />
+            <div class="mg-top-14px text-center">
+              <div class="form-block form">
+                <label class="checkbox checkbox-field">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox"
+                    data-name="Checkbox"
+                    class="checkbox-input checkbox-2"
+                  />
+                  <p class="checkbox-label form-label" for="checkbox">
+                    Agree with
+                    <a href="" class="sign-up">Terms &amp; Conditions</a>
+                  </p>
+                </label>
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Sign Up"
+              data-wait="Please wait..."
+              class="formbutton btn-primary button"
+            />
+          </div>
+          <p class="mg-top-12px mg-bottom-0">
+            Already have an account? <a class="sign-up" href="#">Sign In</a>
+          </p>
+        </form>
+      </div>
     </div>
     <footer><div id="footer"></div></footer>
   </body>
