@@ -17,8 +17,7 @@ label {
 input[type="email"],
 input[type="password"],
 input[type="name"],
-input[type="phone"],
-input[type="repassword"] {
+input[type="tel"] {
   display: block;
   width: 100%;
   padding: 10px;
