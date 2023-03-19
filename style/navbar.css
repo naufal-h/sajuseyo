@@ -71,12 +71,15 @@
     display: none;
   }
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+.usernm {
+  color: #eab8c0;
 }
 
-.sticky + .content {
-  padding-top: 60px;
+.usernm:hover {
+  text-decoration: underline;
+}
+
+.welcome {
+  font-size: 16px;
 }
