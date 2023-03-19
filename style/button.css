@@ -1,0 +1,51 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  border: none;
+  padding: 11px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #eab8c0;
+}
+
+svg {
+  fill: #1c2331;
+}
+
+.btn:hover svg {
+  fill: white;
+}
+
+.btn-pjg {
+  height: 44px;
+  background-color: white;
+  border: none;
+  padding: 11px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 16px;
+}
+
+.btn-pjg:hover {
+  background-color: #eab8c0;
+  color: white;
+}
+
+.konten {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
