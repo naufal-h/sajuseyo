@@ -3,6 +3,12 @@
   font-size: 27px;
 }
 
+.navbar__end {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .navbar__top {
   background-color: #eab8c0;
 }
