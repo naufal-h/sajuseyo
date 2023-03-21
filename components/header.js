@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <link rel="stylesheet" href="style/navbar.css" />
-    <link rel="stylesheet" href="style/button.css" />
-  </head>
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
 
-  <nav class="navbar">
+  connectedCallback() {
+    this.innerHTML = `
+<header>
+    <nav class="navbar">
     <div class="navbar__top">
       <div class="wrapper navbar__wrapper">
         <div class="navbar__start">
@@ -86,4 +83,9 @@
       </div>
     </div>
   </nav>
-</html>
+  </header>
+    `;
+  }
+}
+
+customElements.define("header-component", Header);

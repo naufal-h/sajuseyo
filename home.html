@@ -11,24 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style/home.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/card.css" />
     <link rel="stylesheet" href="style/button.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script>
-      $(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <link />
   </head>
   <body>
-    <header>
-      <div id="navbar"></div>
-    </header>
+    <header-component></header-component>
     <div class="hero">
       <div class="hero hero--750px hero--mobile--auto">
         <div class="hero__media">
@@ -341,6 +335,6 @@
       </div>
     </div>
 
-    <footer><div id="footer"></div></footer>
+    <footer-component></footer-component>
   </body>
 </html>
