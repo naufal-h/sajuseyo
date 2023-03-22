@@ -9,10 +9,13 @@ li {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .description {
+  margin: 0 auto;
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
   width: 228px;
   position: relative;
-  margin: 0 auto;
-  padding: 0;
 }
 .over_box {
   width: 198px;
@@ -56,12 +59,6 @@ li {
   font-weight: 500;
   color: #272343;
 }
-.product-grid5 .thumbnail {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-}
 .thumbnail a img {
   width: 228px;
   border: 0;
@@ -92,7 +89,7 @@ li {
 }
 
 .price-now {
-  font: 0.75em poppins;
+  font: 0.75em "Poppins";
   color: #232744;
   font-size: 14px;
   font-weight: 600;
@@ -166,7 +163,9 @@ li {
 }
 .thumbnail {
   position: relative;
-  margin: 10px 7px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 }
 .thumbnail a img {
@@ -191,13 +190,7 @@ li {
 .thumbnail .promotion img {
   margin: 0 4px 0 0;
 }
-.base-product .product-list .description {
-  margin: 0 auto;
-  padding: 0 7px;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-}
+
 .product-name {
   display: block;
   text-align: left;
