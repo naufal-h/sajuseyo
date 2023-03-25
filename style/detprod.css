@@ -108,10 +108,9 @@ hr {
 }
 .checkout-top {
   position: relative;
-  padding: 0 0 10px;
-  margin: 15px 0 15px;
+  margin-top: 15px;
   line-height: 24px;
-  border-bottom: 1px solid #d4d5d9;
+  padding-left: 5px;
 }
 .checkout-top h2 {
   display: inline;
@@ -173,8 +172,8 @@ hr {
 }
 .checkout-table table {
   border: 0;
+  width: 400px;
   font-size: 14px;
-  margin: 10px 0 0;
 }
 .checkout-table th {
   font-weight: 400;
@@ -193,7 +192,7 @@ hr {
   cursor: pointer;
 }
 .checkout-table td {
-  padding: 5px 6px;
+  padding: 0 6px 0 6px;
   vertical-align: middle;
   color: #1c2331 !important;
 }
@@ -202,8 +201,8 @@ hr {
 }
 .imp-info {
   position: relative;
-  margin-top: 10px;
-  padding-top: 10px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   margin-left: -121px;
   display: block;
   border-top: 1px solid #d4d5d9;
@@ -234,7 +233,7 @@ hr {
   padding: 20px 0 10px;
 }
 .totalPrice {
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   height: 34px;
   line-height: 34px;
   padding: 0 9px 0;
