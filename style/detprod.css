@@ -228,7 +228,7 @@ hr {
   display: block;
   margin: 7px 0 0;
   font-size: 11px;
-  color: #353535;
+  color: #1c2331;
 }
 .checkout-bottom {
   padding: 20px 0 10px;
@@ -241,9 +241,9 @@ hr {
   color: #2d2f43;
   vertical-align: middle;
   font-size: 14px;
-  display: flex; /* Add display flex for alignment */
-  justify-content: space-between; /* Add justify-content for alignment */
-  align-items: center; /* Add align-items for vertical alignment */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .totalPrice strong {
@@ -252,12 +252,12 @@ hr {
 
 .totalPrice .total {
   color: #2d2f43;
-  font-size: 14px; /* Reduce font size for better fit */
+  font-size: 12px;
 }
 
 .totalPrice .total em {
   font-style: normal;
-  font-size: 26px;
+  font-size: 23px;
 }
 
 .minusBtn,

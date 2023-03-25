@@ -16,12 +16,25 @@ function hoverOut() {
 }
 
 function categoryImg(pic, btnId) {
-  document.querySelector(".big-img img").src = pic;
-  document.querySelectorAll(".category-buttons").forEach((button) => {
+  const productImage = document.querySelector(".big-img img");
+  const categoryButtons = document.querySelectorAll(".category-buttons");
+
+  productImage.src = pic;
+  categoryButtons.forEach((button) => {
     if (button.id === btnId) {
       button.classList.add("selected");
     } else {
       button.classList.remove("selected");
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    const isClickInside = Array.from(categoryButtons).some((button) =>
+      button.contains(event.target)
+    );
+    if (!isClickInside) {
+      productImage.src = "assets/detprod/wenpod.jpg";
+      categoryButtons.forEach((button) => button.classList.remove("selected"));
     }
   });
 }
