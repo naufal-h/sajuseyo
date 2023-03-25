@@ -97,20 +97,20 @@ li {
   margin: 0 auto 2px;
 }
 
-.price-now {
+.product-card .price-now {
   font: 0.75em "Poppins";
   color: #232744;
   font-size: 14px;
   font-weight: 600;
   float: left;
 }
-.price-now:first-child {
+.product-card .price-now:first-child {
   margin-right: 4px;
 }
-.price-before:last-child {
+.product-card .price-before:last-child {
   padding-top: 3px;
 }
-.price-before {
+.product-card .price-before {
   font-weight: 500;
   font-size: 11px;
   text-decoration: line-through;
