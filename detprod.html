@@ -4,52 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>detprod</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>RED VELVET - 8TH ANNIVERSARY - LUCKY CARD SET</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/detprod.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/button.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <!-- navbar -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script>
-      $(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
-
-    <!-- my style -->
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/detprod.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="script/detprod.js"></script>
   </head>
   <body>
-    <header>
-      <div id="navbar"></div>
-    </header>
-    <div class="wrapper flex-box">
-      <div class="left">
+    <header-component></header-component>
+    <div class="wrapper split-container">
+      <div class="left-side">
         <div class="big-img">
           <img
             src="assets/detprod/wenpod.jpg"
             alt="image"
-            height="648"
-            width="648"
+            height="520"
+            width="520"
           />
         </div>
         <div class="images">
-          <div class="small-img">
+          <div class="first-small">
             <img
               src="assets/detprod/yerprod.jpg"
               alt="image"
-              height="129"
-              width="129"
+              height="103"
+              width="103"
               onclick="showImg(this.src)"
             />
           </div>
@@ -57,17 +44,17 @@
             <img
               src="assets/detprod/seulprod.jpg"
               alt="image"
-              height="129"
-              width="129"
+              height="103"
+              width="103"
               onclick="showImg(this.src)"
             />
           </div>
           <div class="small-img">
             <img
-              src="assets/detprod/joyprod.jpg"
+              src="assets/detprod/wenpod.jpg"
               alt="image"
-              height="129"
-              width="129"
+              height="103"
+              width="103"
               onclick="showImg(this.src)"
             />
           </div>
@@ -75,8 +62,8 @@
             <img
               src="assets/detprod/irenprod.jpg"
               alt="image"
-              height="129"
-              width="129"
+              height="103"
+              width="103"
               onclick="showImg(this.src)"
             />
           </div>
@@ -102,170 +89,106 @@
           </div>
         </div>
       </div>
-
-      <script>
-        let bigImg = document.querySelector(".big-img img");
-        function showImg(pic) {
-          bigImg.src = pic;
-        }
-      </script>
-    </div>
-    <footer><div id="footer"></div></footer>
-  </body>
-</html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
-
-    fonts
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    navbar
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script>
-      $(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
-
-    my style
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-
-    <style>
-      .product {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        padding: 10px;
-      }
-      .product img {
-        width: 150px;
-        height: 150px;
-        margin-right: 20px;
-      }
-      .product-info {
-        flex: 1;
-      }
-      .product-name {
-        font-size: 24px;
-        margin: 0 0 10px;
-      }
-      .product-description {
-        font-size: 18px;
-        margin: 0 0 10px;
-      }
-      .product-price {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 0 0 10px;
-      }
-      .product-buy {
-        background-color: #4caf50;
-        border: none;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-        margin: 0 0 10px;
-        cursor: pointer;
-      }
-      .product-buy:hover {
-        background-color: #3e8e41;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div id="navbar"></div>
-    </header>
-    <section class="sproduct">
-      <div class="row">
-        <div>
-          <img src="wenpod.jpg" alt="image" height="648" width="648" />
-          <div class="smallprod-img-group">
-            <div class="smallprod-img-col">
-              <img
-                src="wenpod.jpg"
-                alt="image"
-                height="129"
-                width="129"
-                class="smallprod-img"
-              />
+      <div class="right-side">
+        <div class="checkout">
+          <div class="checkout-table">
+            <div class="checkout-top">
+              <h2>
+                <em>SM Ent.</em>RED VELVET - 8TH ANNIVERSARY - LUCKY CARD SET
+              </h2>
+              <div class="price-now">
+                <span>Rp</span>
+                <span>350.000</span>
+                <span class="price-before">Rp. 500.000 </span>
+                <span class="discount">30% OFF</span>
+                <a href="#" class="share"
+                  ><img src="/assets/svg/share.svg" height="20px"
+                /></a>
+              </div>
             </div>
-            <div class="smallprod-img-col">
-              <img
-                src="wenpod.jpg"
-                alt="image"
-                height="129"
-                width="129"
-                class="smallprod-img"
-              />
+            <table border="0">
+              <tbody>
+                <tr>
+                  <th>
+                    <img
+                      class="star1"
+                      src="/assets/svg/star.svg"
+                      alt=""
+                      height="20px"
+                      onmouseover="hover(1);"
+                      onmouseout="hoverOut(this)"
+                    />
+                    <img
+                      class="star2"
+                      src="/assets/svg/star.svg"
+                      alt=""
+                      height="20px"
+                      onmouseover="hover(2);"
+                      onmouseout="hoverOut(this)"
+                    />
+                    <img
+                      class="star3"
+                      src="/assets/svg/star.svg"
+                      alt=""
+                      height="20px"
+                      onmouseover="hover(3);"
+                      onmouseout="hoverOut(this)"
+                    />
+                    <img
+                      class="star4"
+                      src="/assets/svg/star.svg"
+                      alt=""
+                      height="20px"
+                      onmouseover="hover(4);"
+                      onmouseout="hoverOut(this)"
+                    />
+                    <img
+                      class="star5"
+                      src="/assets/svg/star.svg"
+                      alt=""
+                      height="20px"
+                      onmouseover="hover(5);"
+                      onmouseout="hoverOut(this)"
+                    />
+                  </th>
+                  <td>
+                    <a href="" class="qna">Write a review </a>&nbsp;|&nbsp;<a
+                      href=""
+                      class="qna"
+                      >Ask a question?</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td class="imp-info">
+                    <span style="font-size: 14px; color: #232744"
+                      >*Sales Period: 2/10 14:00~2/12 23:59 (WIB) <br />*This
+                      product will be dispatched in order from 3/29 to 4/7.
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="totalPrice">
+              <span>TOTAL</span
+              ><span class="total"
+                ><strong><em>Rp. 350.000</em></strong> (1 item(s))</span
+              >
             </div>
-            <div class="smallprod-img-col">
-              <img
-                src="wenpod.jpg"
-                alt="image"
-                height="129"
-                width="129"
-                class="smallprod-img"
-              />
-            </div>
-            <div class="smallprod-img-col">
-              <img
-                src="wenpod.jpg"
-                alt="image"
-                height="129"
-                width="129"
-                class="smallprod-img"
-              />
+            <div class="checkout-bottom">
+              <div class="base-button" style="position: relative">
+                <a href="" class="first" style="display: block">
+                  <span>Buy Now</span>
+                </a>
+                <a href="" class="fleft" style="display: block">Add to Cart</a>
+                <a href="" class="fright">Add to Wish List</a>
+              </div>
             </div>
           </div>
         </div>
-        <div></div>
       </div>
-    </section>
-    <div class="caption">
-      <h4>Product Description</h4>
-      <textarea name="capt" id="capt" cols="100" rows="50">
-      Lorem ipsum dolor sit amet, 
-      consectetur adipiscing elit. 
-      Duis auctor tortor ex, et sodales quam dapibus id. 
-      Cras tincidunt odio vel libero dignissim, ac tincidunt enim varius. 
-      Nulla massa nunc, interdum quis quam mollis, egestas tempor lectus. 
-      Nullam tempus lobortis viverra. 
-      
-      Donec ut elementum velit. 
-      Pellentesque interdum vitae dolor et egestas. 
-      Nulla congue arcu sit amet ipsum viverra eleifend. 
-      Vivamus sit amet lobortis erat, ac sollicitudin nisi. 
-      Cras convallis leo et velit sagittis gravida quis et lectus. 
-      Nulla lorem metus, ultricies placerat bibendum quis, faucibus a turpis. 
-      
-      Vivamus ut ligula rhoncus, porta nunc eget, finibus dui. 
-      Curabitur auctor commodo sem, vitae ornare diam venenatis in. 
-      Suspendisse risus lacus, lacinia euismod leo ut, elementum cursus diam
-      </textarea>
     </div>
-    <div class="detharga">
-      <h5>SM.Ent</h5>
-    </div>
-    <footer><div id="footer"></div></footer>
+    <footer-component></footer-component>
   </body>
-</html> -->
+</html>
