@@ -29,19 +29,6 @@ function categoryImg(pic, btnId) {
       button.classList.remove("selected");
     }
   });
-
-  document.addEventListener("click", function (event) {
-    const isClickInsideButtons = Array.from(categoryButtons).some((button) =>
-      button.contains(event.target)
-    );
-    const isClickInsideImage =
-      event.target.classList.contains("small-img") ||
-      event.target.parentElement.classList.contains("small-img");
-    if (!isClickInsideButtons && !isClickInsideImage) {
-      productImage.src = "assets/detprod/wenpod.jpg";
-      categoryButtons.forEach((button) => button.classList.remove("selected"));
-    }
-  });
 }
 
 let qty = 1;
