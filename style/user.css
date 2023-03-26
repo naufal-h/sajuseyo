@@ -111,10 +111,6 @@ input {
   height: 50px;
   line-height: 50px;
 }
-.user-buttons .fright {
-  position: absolute;
-  right: 0;
-}
 li {
   list-style: none;
 }
@@ -201,9 +197,6 @@ a:active {
   content: " ";
   display: block;
   clear: both;
-}
-.fright {
-  float: right;
 }
 html {
   overflow-y: scroll;

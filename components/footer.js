@@ -37,8 +37,8 @@ class Footer extends HTMLElement {
             <h5 class="footer-header">Help</h5>
             <a href="aboutus.html" class="footer-link">About Us</a>
             <a href="" class="footer-link">Support</a>
-            <a href="" class="footer-link">Terms &amp; Conditions</a>
-            <a href="" class="footer-link">Privacy Policy</a>
+            <a href="tnc.html" class="footer-link">Terms &amp; Conditions</a>
+            <a href="policy.html" class="footer-link">Privacy Policy</a>
           </div>
         </div>
       </div>
