@@ -24,6 +24,10 @@
   align-items: center;
   padding: 0.75rem 0;
 }
+.voucher-inp {
+  margin-left: 12px;
+  width: 100%;
+}
 
 .remove-selected {
   margin-left: 50px;
@@ -34,50 +38,68 @@
   font-weight: 500;
   flex-shrink: 0;
 }
-.cart-checkbox {
-  font-weight: 300;
-  font-size: 12px;
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+.checkbox-field {
+  display: flex;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  justify-content: space-between;
+}
+
+.checkbox-label {
+  margin-bottom: 0px;
+  padding-left: 10px;
+  line-height: 28px;
+}
+
+.checkbox-2 {
+  margin-top: 0px;
+  padding-right: 0px;
+  line-height: 1.2;
+}
+input[type="checkbox"] {
+  appearance: none;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: #f0f2f3;
+  border-radius: 5px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  cursor: default;
-  position: relative;
-  color: rgba(0, 0, 0, 0.54);
-  max-width: 400px;
+  justify-content: center;
+  outline: none;
 }
-.cart-checkbox__input {
-  opacity: 0;
-  top: 0;
-  left: 0;
-  position: absolute;
+
+.checkbox-label {
+  color: #1c2331;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 30px;
+  cursor: pointer;
 }
-.cart-checkbox__box {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  position: relative;
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  text-align: center;
-  box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.02);
-  margin-right: 8px;
+input[type="checkbox"]:after {
+  font-weight: 20px;
+  content: "✔";
+  font-size: 14px;
+  color: #fafafa;
+  display: none;
 }
-.cart-checkbox__box:hover {
-  box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.09);
+
+input[type="checkbox"]:hover {
+  background-color: #dcdcdc;
 }
-.cart-checkbox__box:before {
-  position: absolute;
-  content: "";
-  height: 5px;
-  width: 9px;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transform: rotate(-45deg);
-  left: 3px;
-  top: 3px;
+
+input[type="checkbox"]:checked {
+  background-color: #eab8c0;
 }
+
+input[type="checkbox"]:checked::after {
+  display: block;
+}
+
 .voucher-dsc-text {
   font-weight: 500;
   flex: 0 1 auto;
