@@ -32,6 +32,13 @@
   color: #1c2331;
 }
 
+.related {
+  color: #1c2331;
+
+  font-size: 14px;
+  line-height: 40px;
+  text-decoration: none;
+}
 .product-category-link {
   color: #1c2331;
 
