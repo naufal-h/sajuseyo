@@ -62,6 +62,10 @@ svg {
   fill: #eab8c0;
 }
 
+.btn-pjg:hover a {
+  color: #eab8c0;
+}
+
 .konten {
   display: flex;
   flex-direction: row;
