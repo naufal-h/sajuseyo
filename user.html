@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sajuseyo!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/user.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/card.css" />
+    <link rel="stylesheet" href="style/button.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <div class="wrapper user-wrap">
+      <div class="user-container">
+        <div class="clear-both user-top">
+          <div class="width1140">
+            <div class="user-topleft">
+              <div class="pfp" style="display: block">
+                <a href="assets/detprod/manyun.jpg"
+                  ><img src="assets/detprod/manyun.jpg"
+                /></a>
+              </div>
+            </div>
+
+            <div class="user-topright" style="float: right">
+              <div class="usn">
+                <strong><span>Moti</span></strong>
+              </div>
+
+              <div class="user-stats">
+                <ul class="order">
+                  <li>
+                    <strong>Order History</strong>
+                    <a href="orderhistory.html" class="count">0</a>
+                  </li>
+                  <li>
+                    <strong>Cancel/Exchange/Return</strong>
+                    <a class="count"
+                      ><span>0</span>/<span>0</span>/<span>0</span></a
+                    >
+                  </li>
+                  <li>
+                    <strong>Coupon</strong>
+                    <a href="coupon.html" class="count"><span>0</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="width1140">
+          <div class="user-mid">
+            <div class="side_title">MY PAGE</div>
+            <ul class="first_ul">
+              <li class="first_li">My Account</li>
+              <li>
+                <a href="orderhistory.html">Order History </a>
+              </li>
+              <li>
+                <a href="wishlist.html">Wish List </a>
+              </li>
+              <li>
+                <a href="coupon.html">Coupons </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="first_li">My Profile</li>
+              <li>
+                <a href="user.html">Edit Profile </a>
+              </li>
+              <li>
+                <a href="address.html">Address </a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="user-main">
+            <form>
+              <div class="user-edit">
+                <h3 class="side_title">
+                  Personal Profile
+                  <span class="required"
+                    ><em class="ico_required">*</em> Required input</span
+                  >
+                </h3>
+                <div class="user-table">
+                  <table border="0" summary="">
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                          <em class="ico_required">*</em>Username
+                        </th>
+                        <td>
+                          <input
+                            placeholder="Username"
+                            value="moti02"
+                            type="text"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <em class="ico_required">*</em>Email
+                        </th>
+                        <td>
+                          <input
+                            placeholder="Email"
+                            value="moti@moti.com"
+                            type="text"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><em class="ico_required">*</em>Name</th>
+                        <td>
+                          <input
+                            id="name"
+                            name="name"
+                            placeholder="First Name"
+                            maxlength="15"
+                            value="Moti"
+                            type="text"
+                          />
+                          <input
+                            id="last_name"
+                            name="last_name"
+                            placeholder="Last Name"
+                            maxlength="15"
+                            value=""
+                            type="text"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <em class="ico_required">*</em>Phone
+                        </th>
+                        <td>
+                          <input
+                            placeholder="Phone Number"
+                            value=""
+                            type="text"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <em class="ico_required">*</em>Password
+                        </th>
+                        <td>
+                          <input
+                            placeholder="Password"
+                            value=""
+                            type="password"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <em class="ico_required">*</em>Re-Password
+                        </th>
+                        <td>
+                          <input
+                            placeholder="Repeat Password"
+                            value=""
+                            type="password"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="clear-both user-buttons">
+                  <a href="home.html" class="button-cancel btnripple">Cancel</a>
+                  <a href="home.html" class="button-confirm btnripple">Save</a>
+                  <a href="home.html" class="button-cancel fright btnripple"
+                    >Close Account</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer-component></footer-component>
+  </body>
+</html>

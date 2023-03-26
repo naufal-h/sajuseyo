@@ -17,7 +17,7 @@ class Header extends HTMLElement {
             <nav role="navigation" class="nav-content navibar-menu">
               <div class="search-banner">
                 <div class="search-section">
-                  <form action="/search" class="search nav-form">
+                  <form action="/search.html" class="search nav-form">
                     <input
                       type="search"
                       class="search-bar nav-input"
@@ -64,7 +64,7 @@ class Header extends HTMLElement {
                     />
                   </svg>
                 </a>
-                <a href="login.html" class="btn2">
+                <a href="user.html" class="btn2">
                   <svg
                     width="22"
                     height="22"
