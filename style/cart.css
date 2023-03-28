@@ -128,6 +128,7 @@ input[type="checkbox"]:checked::after {
 }
 .co-btn {
   width: 100%;
+  color: white;
 }
 .co-info {
   display: flex;
@@ -352,9 +353,10 @@ input[type="checkbox"]:checked::after {
   cursor: pointer;
   background: 0 0;
   border: 0;
+  color: #eab8c0;
 }
 .remove-btn:hover {
-  color: #eab8c0;
+  text-decoration: underline;
   transition: color 0.1s cubic-bezier(0.4, 0, 0.6, 1);
 }
 .cart-detail-img {
