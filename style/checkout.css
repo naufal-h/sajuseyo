@@ -43,10 +43,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.checkout-top-addr .icon-location-marker {
-  width: 12px;
-  height: 16px;
-}
 .checkout-top-addr-wrap {
   display: flex;
   align-items: center;
@@ -58,6 +54,9 @@
 .checkout-top-addr-wrap .checkout-top-addr-icon {
   display: flex;
   margin-right: 9px;
+}
+.checkout-top-addr-wrap .checkout-top-addr-icon svg {
+  fill: none;
 }
 .checkout-top-info {
   display: flex;
@@ -72,7 +71,6 @@
     45deg,
     #cfe2f1,
     #cfe2f1 33px,
-
     #ffcbcb 0,
     #ffcbcb 74px
   );
@@ -240,9 +238,6 @@
 .checkout-main-bottom-col:last-child {
   border-left: 1px dashed rgba(0, 0, 0, 0.09);
 }
-.checkout-main-bottom-note {
-  flex: 4;
-}
 .checkout-main-bottom-grid {
   flex: 6;
   padding: 16px 0;
@@ -279,8 +274,8 @@
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.09);
   border-radius: 3px;
 }
-.checkout-main-content + .checkout-main-content,
-.checkout-main {
+.checkout-main,
+.checkout-main-content + .checkout-main-content {
   margin-top: 12px;
 }
 .checkout-main {
@@ -294,8 +289,8 @@
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.09);
   border-radius: 3px;
 }
-.checkout-main-top-grid,
-.checkout-main-top {
+.checkout-main-top,
+.checkout-main-top-grid {
   display: flex;
   align-items: center;
 }
@@ -319,8 +314,8 @@
   flex-shrink: 0;
   flex-direction: column;
 }
-.checkout-payment-left-wrap,
-.checkout-payment-left {
+.checkout-payment-left,
+.checkout-payment-left-wrap {
   display: flex;
 }
 .checkout-payment-content {
@@ -374,24 +369,6 @@
 }
 .checkout-payment-wrap {
   margin-top: 20px;
-}
-.shopee-icon-button {
-  outline: 0;
-  cursor: pointer;
-  border: 0;
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.1s cubic-bezier(0.4, 0, 0.6, 1);
-}
-.shopee-icon-button {
-  border: 1px solid rgba(0, 0, 0, 0.54);
-  background-color: transparent;
-  padding: 0;
 }
 .checkout-bottom-gap {
   margin-top: 20px;
@@ -454,13 +431,8 @@
   grid-row-start: 12;
   grid-row-end: 13;
 }
-.checkout-bottom-item-3rd,
 .checkout-bottom-item-2nd {
   -ms-grid-row-span: 1;
-}
-.checkout-bottom-item-3rd {
-  grid-row-start: 13;
-  grid-row-end: 14;
 }
 .cart-total {
   -ms-grid-row-span: 1;
@@ -493,7 +465,6 @@
   border-radius: 50px;
   grid-column-start: 3;
 }
-
 .co-button-solid:hover {
   background-color: #d9aeb5;
 }

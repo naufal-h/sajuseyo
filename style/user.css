@@ -381,8 +381,11 @@ body {
   word-wrap: break-word;
 }
 .user-top {
+  padding-top: 15px;
+
   width: 100%;
   margin-bottom: 60px;
+  background-color: #fff6f8;
 }
 .user-top .user-topleft {
   float: left;
