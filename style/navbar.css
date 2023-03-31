@@ -191,7 +191,7 @@
   flex: 1;
 }
 .nav-bar {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 200;
   display: flex;
