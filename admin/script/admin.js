@@ -201,7 +201,7 @@ $(document).ready(function () {
     });
   }
 
-  $("body").on("change", ".image-upload", function (e) {
+  $("body").on("change", ".thumbnailimage-upload", function (e) {
     var lkthislk = $(this);
 
     if (this.files && this.files[0]) {
@@ -210,8 +210,8 @@ $(document).ready(function () {
         var ec_image_preview = lkthislk
           .parent()
           .parent()
-          .children(".preview")
-          .find(".image-preview")
+          .children(".thumbnailpreview")
+          .find(".thumbnailimage-preview")
           .attr("src", e.target.result);
 
         ec_image_preview.hide();
