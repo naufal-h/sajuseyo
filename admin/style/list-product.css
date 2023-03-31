@@ -1822,6 +1822,117 @@ thead th {
   margin-top: 20px;
   margin-bottom: 0;
 }
+.badge {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.125rem;
+}
+.badge:empty {
+  display: none;
+}
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+badge {
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 0.75em;
+}
+.badge {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 75%;
+  font-weight: 500;
+  line-height: 9px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .badge {
+    transition: none;
+  }
+}
+a.badge:focus,
+a.badge:hover {
+  text-decoration: none;
+}
+.badge:empty {
+  display: none;
+}
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+.badge-primary {
+  color: #fff;
+  background-color: #b2dfee;
+}
+a.badge-primary:focus,
+a.badge-primary:hover {
+  color: #fff;
+  background-color: #1961ff;
+}
+a.badge-primary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(76, 132, 255, 0.5);
+}
+.badge-success {
+  color: #fff;
+  background-color: #b6d7b6;
+}
+a.badge-success:focus,
+a.badge-success:hover {
+  color: #fff;
+  background-color: #20a278;
+}
+a.badge-success:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(41, 204, 151, 0.5);
+}
+.badge-warning {
+  color: #fff;
+  background-color: #f4e8b8;
+}
+a.badge-warning:focus,
+a.badge-warning:hover {
+  color: #212529;
+  background-color: #cb9d00;
+}
+a.badge-warning:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(254, 196, 0, 0.5);
+}
+.badge-danger {
+  color: #fff;
+  background-color: #e1969e;
+}
+a.badge-danger:focus,
+a.badge-danger:hover {
+  color: #fff;
+  background-color: #fe2132;
+}
+a.badge-danger:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(254, 84, 97, 0.5);
+}
 .card-table thead th {
   font-size: 0.88rem;
   font-weight: 400;

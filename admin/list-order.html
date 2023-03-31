@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link href="./style/add-product.css" rel="stylesheet" />
+    <link href="./style/list-product.css" rel="stylesheet" />
   </head>
   <body class="header-fixed sidebar-fixed sidebar-light header-light" id="body">
     <div class="wrapper">
@@ -156,7 +156,7 @@
                           </div>
                         </li>
 
-                        <li class="has-sub active expand">
+                        <li class="has-sub">
                           <a
                             class="sidenav-item-link"
                             href="javascript:void(0)"
@@ -172,7 +172,7 @@
                               <g clip-path="url(#clip0_759_238)">
                                 <path
                                   d="M475 43.3013L671.41 156.699C717.82 183.494 746.41 233.013 746.41 286.603V513.397C746.41 566.987 717.82 616.506 671.41 643.301L475 756.699C428.59 783.494 371.41 783.494 325 756.699L128.59 643.301C82.1797 616.506 53.5898 566.987 53.5898 513.397V286.603C53.5898 233.013 82.1797 183.494 128.59 156.699L325 43.3013C371.41 16.5063 428.59 16.5063 475 43.3013ZM355.221 83.7907L350 86.6025L153.59 200C124.278 216.923 105.629 247.443 103.747 280.986L103.59 286.603V513.397C103.59 547.244 120.696 578.654 148.804 597.055L153.59 600L350 713.397C379.221 730.268 414.847 731.206 444.779 716.209L450 713.397L646.41 600C675.722 583.077 694.371 552.557 696.253 519.014L696.41 513.397V286.603C696.41 252.756 679.304 221.346 651.196 202.945L646.41 200L450 86.6025C420.779 69.7317 385.153 68.7944 355.221 83.7907ZM575.508 288.934C581.99 301.125 577.362 316.263 565.171 322.745L424.712 397.416L424.713 566.639C424.713 580.446 413.52 591.639 399.713 591.639C385.906 591.639 374.713 580.446 374.713 566.639L374.712 397.416L234.255 322.745C222.064 316.263 217.436 301.125 223.918 288.934C230.4 276.743 245.538 272.115 257.729 278.598L399.712 354.066L541.697 278.598C553.888 272.115 569.026 276.743 575.508 288.934Z"
-                                  fill="#eab8c0"
+                                  fill="#1C2331"
                                 />
                               </g>
                             </svg>
@@ -180,7 +180,7 @@
                             <span class="nav-text">Products</span>
                             <div class="caret"></div>
                           </a>
-                          <div class="collapse show">
+                          <div class="collapse">
                             <ul
                               class="sub-menu"
                               id="products"
@@ -206,11 +206,8 @@
                           </div>
                         </li>
 
-                        <li>
-                          <a
-                            class="sidenav-item-link"
-                            href="././list-order.html"
-                          >
+                        <li class="active">
+                          <a class="sidenav-item-link" href="./list-order.html">
                             <svg
                               class="nav-icon"
                               width="24"
@@ -221,7 +218,7 @@
                             >
                               <path
                                 d="M149.4 220.28C154.069 192.254 168.531 166.793 190.213 148.43C211.894 130.067 239.387 119.993 267.8 120H532.2C560.613 119.993 588.106 130.067 609.787 148.43C631.469 166.793 645.931 192.254 650.6 220.28L680 400V600C680 621.217 671.571 641.566 656.569 656.569C641.566 671.571 621.217 680 600 680H200C178.783 680 158.434 671.571 143.431 656.569C128.429 641.566 120 621.217 120 600V400L149.4 220.28ZM267.8 200C258.325 199.995 249.156 203.353 241.925 209.477C234.695 215.601 229.874 224.093 228.32 233.44L200 400V440H255.76C279.464 439.995 302.638 447.01 322.36 460.16L355.64 482.36C368.778 491.114 384.213 495.785 400 495.785C415.787 495.785 431.222 491.114 444.36 482.36L477.64 460.16C497.373 447.002 520.563 439.987 544.28 440H600V400L571.68 233.44C570.127 224.1 565.312 215.614 558.09 209.49C550.868 203.367 541.708 200.004 532.24 200H267.76H267.8Z"
-                                fill="#1C2331"
+                                fill="#eab8c0"
                               />
                             </svg>
 
@@ -229,10 +226,7 @@
                           </a>
                         </li>
                         <li>
-                          <a
-                            class="sidenav-item-link"
-                            href="././list-order.html"
-                          >
+                          <a class="sidenav-item-link" href="./list-user.html">
                             <svg
                               class="nav-icon"
                               width="24"
@@ -353,7 +347,7 @@
           <div class="content">
             <div class="breadcrumb-wrapper">
               <div>
-                <h1>Add Product</h1>
+                <h1>Orders</h1>
                 <p class="breadcrumbs">
                   <span><a href="index.html">Home</a></span>
                   <span
@@ -361,286 +355,354 @@
                       src="/assets/svg/arrow-down.svg"
                       style="transform: rotate(-90deg)"
                       alt="" /></span
-                  >Add Product
+                  >Orders
                 </p>
               </div>
             </div>
             <div class="row">
-              <div class="add-prod-col">
-                <div class="card card-default">
-                  <div class="card-header card-header-border-bottom">
-                    <h2>Add Product</h2>
-                  </div>
-
-                  <div class="card-body">
-                    <div class="row thumbnailvendor-uploads">
-                      <div class="add-prod-col-left">
-                        <div class="thumbnailvendor-img-upload">
-                          <div class="thumbnailvendor-main-img">
-                            <div class="avatar-upload">
-                              <div class="avatar-edit">
-                                <input
-                                  type="file"
-                                  id="imageUpload"
-                                  class="thumbnailimage-upload"
-                                  accept=".png, .jpg, .jpeg"
-                                />
-                                <label for="imageUpload"
-                                  ><img
-                                    src="/assets/svg/edit.svg"
-                                    class="svg_img header_svg"
-                                    alt="edit"
-                                /></label>
-                              </div>
-                              <div class="avatar-preview thumbnailpreview">
-                                <div class="imagePreview thumbnaildiv-preview">
-                                  <img
-                                    class="thumbnailimage-preview"
-                                    src="https://dummyimage.com/765x765/eab8c1/ffffff.jpg&text=Insert+Image+Here+(1:1+Ratio)"
-                                    alt="edit"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="thumb-upload-set">
-                              <div class="thumb-upload">
-                                <div class="thumb-edit">
-                                  <input
-                                    type="file"
-                                    id="thumbUpload01"
-                                    class="thumbnailimage-upload"
-                                    accept=".png, .jpg, .jpeg"
-                                  />
-                                  <label for="imageUpload"
-                                    ><img
-                                      src="/assets/svg/edit.svg"
-                                      class="svg_img header_svg"
-                                      alt="edit"
-                                  /></label>
-                                </div>
-                                <div class="thumb-preview thumbnailpreview">
-                                  <div class="image-thumb-preview">
-                                    <img
-                                      class="image-thumb-preview thumbnailimage-preview"
-                                      src="https://dummyimage.com/765x765/eab8c1/ffffff.jpg&text=Insert+Image+Here+(1:1+Ratio)"
-                                      alt="edit"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="thumb-upload">
-                                <div class="thumb-edit">
-                                  <input
-                                    type="file"
-                                    id="thumbUpload02"
-                                    class="thumbnailimage-upload"
-                                    accept=".png, .jpg, .jpeg"
-                                  />
-                                  <label for="imageUpload"
-                                    ><img
-                                      src="/assets/svg/edit.svg"
-                                      class="svg_img header_svg"
-                                      alt="edit"
-                                  /></label>
-                                </div>
-                                <div class="thumb-preview thumbnailpreview">
-                                  <div class="image-thumb-preview">
-                                    <img
-                                      class="image-thumb-preview thumbnailimage-preview"
-                                      src="https://dummyimage.com/765x765/eab8c1/ffffff.jpg&text=Insert+Image+Here+(1:1+Ratio)"
-                                      alt="edit"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="thumb-upload">
-                                <div class="thumb-edit">
-                                  <input
-                                    type="file"
-                                    id="thumbUpload03"
-                                    class="thumbnailimage-upload"
-                                    accept=".png, .jpg, .jpeg"
-                                  />
-                                  <label for="imageUpload"
-                                    ><img
-                                      src="/assets/svg/edit.svg"
-                                      class="svg_img header_svg"
-                                      alt="edit"
-                                  /></label>
-                                </div>
-                                <div class="thumb-preview thumbnailpreview">
-                                  <div class="image-thumb-preview">
-                                    <img
-                                      class="image-thumb-preview thumbnailimage-preview"
-                                      src="https://dummyimage.com/765x765/eab8c1/ffffff.jpg&text=Insert+Image+Here+(1:1+Ratio)"
-                                      alt="edit"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="thumb-upload">
-                                <div class="thumb-edit">
-                                  <input
-                                    type="file"
-                                    id="thumbUpload04"
-                                    class="thumbnailimage-upload"
-                                    accept=".png, .jpg, .jpeg"
-                                  />
-                                  <label for="imageUpload"
-                                    ><img
-                                      src="/assets/svg/edit.svg"
-                                      class="svg_img header_svg"
-                                      alt="edit"
-                                  /></label>
-                                </div>
-                                <div class="thumb-preview thumbnailpreview">
-                                  <div class="image-thumb-preview">
-                                    <img
-                                      class="image-thumb-preview thumbnailimage-preview"
-                                      src="https://dummyimage.com/765x765/eab8c1/ffffff.jpg&text=Insert+Image+Here+(1:1+Ratio)"
-                                      alt="edit"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="thumb-upload">
-                                <div class="thumb-edit">
-                                  <input
-                                    type="file"
-                                    id="thumbUpload05"
-                                    class="thumbnailimage-upload"
-                                    accept=".png, .jpg, .jpeg"
-                                  />
-                                  <label for="imageUpload"
-                                    ><img
-                                      src="/assets/svg/edit.svg"
-                                      class="svg_img header_svg"
-                                      alt="edit"
-                                  /></label>
-                                </div>
-                                <div class="thumb-preview thumbnailpreview">
-                                  <div class="image-thumb-preview">
-                                    <img
-                                      class="image-thumb-preview thumbnailimage-preview"
-                                      src="https://dummyimage.com/765x765/eab8c1/ffffff.jpg&text=Insert+Image+Here+(1:1+Ratio)"
-                                      alt="edit"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="thumb-upload">
-                                <div class="thumb-edit">
-                                  <input
-                                    type="file"
-                                    id="thumbUpload06"
-                                    class="thumbnailimage-upload"
-                                    accept=".png, .jpg, .jpeg"
-                                  />
-                                  <label for="imageUpload"
-                                    ><img
-                                      src="/assets/svg/edit.svg"
-                                      class="svg_img header_svg"
-                                      alt="edit"
-                                  /></label>
-                                </div>
-                                <div class="thumb-preview thumbnailpreview">
-                                  <div class="image-thumb-preview">
-                                    <img
-                                      class="image-thumb-preview thumbnailimage-preview"
-                                      src="https://dummyimage.com/765x765/eab8c1/ffffff.jpg&text=Insert+Image+Here+(1:1+Ratio)"
-                                      alt="edit"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+              <div class="card card-default">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <div class="dataTables_wrapper">
+                      <div class="top-information">
+                        <div class="dataTables_filter">
+                          <label
+                            >Search &nbsp;<input
+                              type="search"
+                              class="form-search"
+                              placeholder=""
+                          /></label>
                         </div>
                       </div>
-                      <div class="add-prod-col-right">
-                        <div class="thumbnailvendor-upload-detail">
-                          <form>
-                            <div class="addprod-title-col">
-                              <label for="inputEmail4" class="form-label"
-                                >Product name</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control slug-title"
-                                id="inputEmail4"
-                              />
-                            </div>
-                            <div class="addprod-title-col">
-                              <label class="form-label"
-                                >Select Categories</label
-                              >
-                              <select
-                                name="categories"
-                                id="Categories"
-                                class="form-select"
-                              >
-                                <option value="Music">Music</option>
-                                <option value="Fanlight">Fanlight</option>
+                      <table
+                        class="table dataTable no-footer"
+                        style="width: 100%"
+                      >
+                        <thead>
+                          <tr>
+                            <th>Order ID</th>
+                            <th>Product Name</th>
+                            <th class="row-title">Qty</th>
+                            <th class="row-title">Date</th>
+                            <th class="row-title">Total</th>
+                            <th>Status</th>
+                            <th></th>
+                          </tr>
+                        </thead>
 
-                                <option value="Photo Book">Photo Book</option>
-                                <option value="Printed Photo">
-                                  Printed Photo
-                                </option>
-                              </select>
-                            </div>
-
-                            <div class="addprod-title-col-long">
-                              <label class="form-label">Description</label>
-                              <textarea
-                                class="form-control"
-                                rows="2"
-                              ></textarea>
-                            </div>
-
-                            <div class="addprod-title-col">
-                              <label class="form-label">Price</label>
-                              <input
-                                type="number"
-                                class="form-control"
-                                id="price1"
-                              />
-                            </div>
-                            <div class="addprod-title-col">
-                              <label class="form-label">Quantity</label>
-                              <input
-                                type="number"
-                                class="form-control"
-                                id="quantity1"
-                              />
-                            </div>
-
-                            <div class="addprod-title-col-long">
-                              <label class="form-label"
-                                >Product Tags
-                                <span
-                                  >( Use comma to separate tags )</span
-                                ></label
+                        <tbody>
+                          <tr>
+                            <td>0020</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ReVeluv -ACE Membership</a
                               >
-                              <div class="tagsinput">
-                                <input type="text" placeholder="" />
-                              </div>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="group_tag"
-                                name="group_tag"
-                                value=""
-                                placeholder=""
-                                data-role="tagsinput"
-                                style="display: none"
-                              />
-                            </div>
-                            <div class="addprod-title-col-long">
-                              <button type="submit" class="btn btn-primary">
-                                Submit
-                              </button>
-                            </div>
-                          </form>
+                            </td>
+                            <td class="row-title">5</td>
+                            <td class="row-title">20 Mar 2023</td>
+                            <td class="row-title">Rp. 5.505.000</td>
+                            <td>
+                              <span class="badge badge-success">Completed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0019</td>
+                            <td>
+                              <a class="" href="">
+                                Red Velvet - 8th Anniversary Acrylic Stand &amp;
+                                AR Voice Card Set</a
+                              >
+                            </td>
+                            <td class="row-title">2</td>
+                            <td class="row-title">10 Mar 2023</td>
+                            <td class="row-title">Rp. 300.000</td>
+                            <td>
+                              <span class="badge badge-primary">Delivered</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0018</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - POSTCARD + HOLOGRAM PHOTO CARD SET
+                                - Feel My Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">1</td>
+                            <td class="row-title">4 Mar 2023</td>
+                            <td class="row-title">Rp. 120.000</td>
+                            <td>
+                              <span class="badge badge-warning">Prepared</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0017</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ACRYLIC STAND KEY RING - Feel My
+                                Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">4</td>
+                            <td class="row-title">14 Feb 2023</td>
+                            <td class="row-title">Rp. 1.258.000</td>
+                            <td>
+                              <span class="badge badge-danger">Cancelled</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0016</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ReVeluv -ACE Membership</a
+                              >
+                            </td>
+                            <td class="row-title">5</td>
+                            <td class="row-title">20 Mar 2023</td>
+                            <td class="row-title">Rp. 5.505.000</td>
+                            <td>
+                              <span class="badge badge-success">Completed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0015</td>
+                            <td>
+                              <a class="" href="">
+                                Red Velvet - 8th Anniversary Acrylic Stand &amp;
+                                AR Voice Card Set</a
+                              >
+                            </td>
+                            <td class="row-title">2</td>
+                            <td class="row-title">10 Mar 2023</td>
+                            <td class="row-title">Rp. 300.000</td>
+                            <td>
+                              <span class="badge badge-primary">Delivered</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0014</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - POSTCARD + HOLOGRAM PHOTO CARD SET
+                                - Feel My Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">1</td>
+                            <td class="row-title">4 Mar 2023</td>
+                            <td class="row-title">Rp. 120.000</td>
+                            <td>
+                              <span class="badge badge-warning">Prepared</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0013</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ACRYLIC STAND KEY RING - Feel My
+                                Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">4</td>
+                            <td class="row-title">14 Feb 2023</td>
+                            <td class="row-title">Rp. 1.258.000</td>
+                            <td>
+                              <span class="badge badge-danger">Cancelled</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0012</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ReVeluv -ACE Membership</a
+                              >
+                            </td>
+                            <td class="row-title">5</td>
+                            <td class="row-title">20 Mar 2023</td>
+                            <td class="row-title">Rp. 5.505.000</td>
+                            <td>
+                              <span class="badge badge-success">Completed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0011</td>
+                            <td>
+                              <a class="" href="">
+                                Red Velvet - 8th Anniversary Acrylic Stand &amp;
+                                AR Voice Card Set</a
+                              >
+                            </td>
+                            <td class="row-title">2</td>
+                            <td class="row-title">10 Mar 2023</td>
+                            <td class="row-title">Rp. 300.000</td>
+                            <td>
+                              <span class="badge badge-primary">Delivered</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0010</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - POSTCARD + HOLOGRAM PHOTO CARD SET
+                                - Feel My Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">1</td>
+                            <td class="row-title">4 Mar 2023</td>
+                            <td class="row-title">Rp. 120.000</td>
+                            <td>
+                              <span class="badge badge-warning">Prepared</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0009</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ACRYLIC STAND KEY RING - Feel My
+                                Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">4</td>
+                            <td class="row-title">14 Feb 2023</td>
+                            <td class="row-title">Rp. 1.258.000</td>
+                            <td>
+                              <span class="badge badge-danger">Cancelled</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0008</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ReVeluv -ACE Membership</a
+                              >
+                            </td>
+                            <td class="row-title">5</td>
+                            <td class="row-title">20 Mar 2023</td>
+                            <td class="row-title">Rp. 5.505.000</td>
+                            <td>
+                              <span class="badge badge-success">Completed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0007</td>
+                            <td>
+                              <a class="" href="">
+                                Red Velvet - 8th Anniversary Acrylic Stand &amp;
+                                AR Voice Card Set</a
+                              >
+                            </td>
+                            <td class="row-title">2</td>
+                            <td class="row-title">10 Mar 2023</td>
+                            <td class="row-title">Rp. 300.000</td>
+                            <td>
+                              <span class="badge badge-primary">Delivered</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0006</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - POSTCARD + HOLOGRAM PHOTO CARD SET
+                                - Feel My Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">1</td>
+                            <td class="row-title">4 Mar 2023</td>
+                            <td class="row-title">Rp. 120.000</td>
+                            <td>
+                              <span class="badge badge-warning">Prepared</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0005</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ACRYLIC STAND KEY RING - Feel My
+                                Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">4</td>
+                            <td class="row-title">14 Feb 2023</td>
+                            <td class="row-title">Rp. 1.258.000</td>
+                            <td>
+                              <span class="badge badge-danger">Cancelled</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0004</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ReVeluv -ACE Membership</a
+                              >
+                            </td>
+                            <td class="row-title">5</td>
+                            <td class="row-title">20 Mar 2023</td>
+                            <td class="row-title">Rp. 5.505.000</td>
+                            <td>
+                              <span class="badge badge-success">Completed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0003</td>
+                            <td>
+                              <a class="" href="">
+                                Red Velvet - 8th Anniversary Acrylic Stand &amp;
+                                AR Voice Card Set</a
+                              >
+                            </td>
+                            <td class="row-title">2</td>
+                            <td class="row-title">10 Mar 2023</td>
+                            <td class="row-title">Rp. 300.000</td>
+                            <td>
+                              <span class="badge badge-primary">Delivered</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0002</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - POSTCARD + HOLOGRAM PHOTO CARD SET
+                                - Feel My Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">1</td>
+                            <td class="row-title">4 Mar 2023</td>
+                            <td class="row-title">Rp. 120.000</td>
+                            <td>
+                              <span class="badge badge-warning">Prepared</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>0001</td>
+                            <td>
+                              <a class="" href=""
+                                >Red Velvet - ACRYLIC STAND KEY RING - Feel My
+                                Rhythm</a
+                              >
+                            </td>
+                            <td class="row-title">4</td>
+                            <td class="row-title">14 Feb 2023</td>
+                            <td class="row-title">Rp. 1.258.000</td>
+                            <td>
+                              <span class="badge badge-danger">Cancelled</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="bottom-information">
+                        <div class="dataTables_info">
+                          Showing 1 to 20 of 88 entries
+                        </div>
+                        <div class="dataTables_paginate paging_simple_numbers">
+                          <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                          </div>
                         </div>
                       </div>
                     </div>
