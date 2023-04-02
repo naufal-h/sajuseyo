@@ -14,12 +14,7 @@
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script>
-      $(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
+
     <!-- my style -->
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/form.css" />
@@ -29,44 +24,45 @@
     />
   </head>
   <body>
-    <header>
-      <div id="navbar"></div>
-    </header>
     <div class="formpagewrap page-wrapper">
       <div class="formwrapper card form pages masup">
-        <form class="text-center">
+        <form id="regist" class="text-center">
           <div class="formheader">
             <h1 class="heading-h2-size">Sign Up</h1>
           </div>
           <div class="layout-grid grid-1-column">
             <label>*Full Name</label>
             <input
+              id="name"
               type="name"
-              maxlength="256"
+              maxlength="100"
               name="name"
               class="input"
               required=""
             />
             <label>*Email</label>
             <input
+              id="email"
               type="email"
-              maxlength="256"
+              maxlength="100"
               name="email"
               class="input"
               required=""
             />
             <label>*Phone Number</label>
             <input
+              id="phone"
               type="tel"
-              maxlength="256"
+              maxlength="20"
               name="phone"
               class="input"
               required=""
             />
             <label>*Password</label>
             <input
+              id="password"
               type="password"
-              maxlength="256"
+              maxlength="20"
               name="password"
               class="input"
               minlength="8"
@@ -74,9 +70,10 @@
             />
             <label>*Confirm Password</label>
             <input
+              id="repassword"
               type="password"
-              maxlength="256"
-              name="repaassword"
+              maxlength="20"
+              name="repassword"
               class="input"
               required=""
             />
@@ -114,6 +111,6 @@
         </form>
       </div>
     </div>
-    <footer><div id="footer"></div></footer>
   </body>
+  <script src="script/registerControl.js"></script>
 </html>

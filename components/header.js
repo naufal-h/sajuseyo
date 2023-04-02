@@ -102,7 +102,7 @@ class Header extends HTMLElement {
             </div>
 
             <div class="welcome">
-              <p>Welcome, <a href="login.html" class="usernm">[username]</a></p>
+              <p>Welcome, <a href="login.html" id="usernm" class="usernm">[username]</a></p>
             </div>
           </div>
         </div>

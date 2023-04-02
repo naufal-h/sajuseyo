@@ -7,37 +7,29 @@
     <title>Login</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/form.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script>
-      $(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
   </head>
   <body>
-    <nav>
-      <div id="navbar"></div>
-    </nav>
     <main>
       <div class="formpagewrap page-wrapper">
         <div class="formwrapper card form pages masup">
-          <form class="text-center">
+          <form id="login" class="text-center">
             <div class="formheader">
               <h1 class="heading-h2-size">Sign In</h1>
             </div>
             <div class="layout-grid grid-1-column">
               <input
+                id="email"
                 type="email"
-                maxlength="256"
+                maxlength="50"
                 placeholder="Email"
                 name="Email"
                 class="input"
                 required=""
               />
               <input
+                id="password"
                 type="password"
-                maxlength="256"
+                maxlength="20"
                 placeholder="Password"
                 name="Password"
                 class="input"
@@ -75,6 +67,6 @@
         </div>
       </div>
     </main>
-    <footer><div id="footer"></div></footer>
   </body>
+  <script src="script/loginControl.js"></script>
 </html>
