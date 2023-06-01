@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sajuseyo!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/user.css" />
+    <link rel="stylesheet" href="style/address.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/card.css" />
+    <link rel="stylesheet" href="style/button.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <div class="wrapper user-wrap">
+      <div class="user-container">
+        <div class="clear-both user-top">
+          <div class="width1140">
+            <div class="user-topleft">
+              <div class="pfp" style="display: block">
+                <a href="assets/detprod/manyun.jpg"
+                  ><img src="assets/detprod/manyun.jpg"
+                /></a>
+              </div>
+            </div>
+
+            <div class="user-topright" style="float: right">
+              <div class="usn">
+                <strong><span>Moti</span></strong>
+              </div>
+
+              <div class="user-stats">
+                <ul class="order">
+                  <li>
+                    <strong>Order History</strong>
+                    <a href="./orders.html" class="count">0</a>
+                  </li>
+                  <li>
+                    <strong>Cancel/Exchange/Return</strong>
+                    <a class="count"
+                      ><span>0</span>/<span>0</span>/<span>0</span></a
+                    >
+                  </li>
+                  <li>
+                    <strong>Coupon</strong>
+                    <a href="coupon.html" class="count"><span>0</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="width1140">
+          <div class="user-mid">
+            <div class="side_title">MY PAGE</div>
+            <ul class="first_ul">
+              <li class="first_li">My Account</li>
+              <li>
+                <a href="./orders.html">Order History </a>
+              </li>
+              <li>
+                <a href="wishlist.html">Wish List </a>
+              </li>
+              <li>
+                <a href="coupon.html">Coupons </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="first_li">My Profile</li>
+              <li>
+                <a href="user.html">Edit Profile </a>
+              </li>
+              <li>
+                <a href="address.html">Address </a>
+              </li>
+              <li>
+                <a href="home.html">Logout </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="address-main" role="main">
+              <div style="display: contents">
+                <div class="address-main-wrap">
+                  <div class="address-main-top">
+                    <div class="address-main-top-title">
+                      <div class="my-addresses-top">My Addresses</div>
+                    </div>
+                    <div>
+                      <div class="add-address-wrap">
+                        <div style="display: flex">
+                          <button class="btn-addnew-addr">
+                            <div>Add New Address</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="address-main-content-bg">
+                    <div class="address-main-content-wrap">
+                      <div class="address-main-card address-main-card-padding">
+                        <div class="address-main-card-width">
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <span
+                                class="address-main-card-font address-main-card-alignfont"
+                                ><div class="address-main-card-namae">
+                                  Naufal
+                                </div></span
+                              >
+                              <div class="address-main-card-split"></div>
+                              <div
+                                role="row"
+                                class="address-main-card-whspc address-main-card-rgba address-main-card-children"
+                              >
+                                (+62) 82111633083
+                              </div>
+                            </div>
+                            <div class="address-main-card-lasto">
+                              <button class="address-main-card-lasto-btn">
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <div class="address-main-card-turu">
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  Wisper, Mulyorejo, Mulyorejo
+                                </div>
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  MULYOREJO, KOTA SURABAYA, JAWA TIMUR, ID,
+                                  65552
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="address-main-card-padtop address-main-card-lasto"
+                            >
+                              <button
+                                class="address-main-card-default address-main-card-default-sty address-main-card-default-bg"
+                                disabled=""
+                              >
+                                Set as default
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="row"
+                            class="address-main-card-target address-main-card-children"
+                          >
+                            <span
+                              role="mark"
+                              class="address-def-bar address-isdef address-isdef-border"
+                              >Default</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="address-main-card address-main-card-padding">
+                        <div class="address-main-card-width">
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <span
+                                class="address-main-card-font address-main-card-alignfont"
+                                ><div class="address-main-card-namae">
+                                  Naufal
+                                </div></span
+                              >
+                              <div class="address-main-card-split"></div>
+                              <div
+                                role="row"
+                                class="address-main-card-whspc address-main-card-rgba address-main-card-children"
+                              >
+                                (+62) 82111633083
+                              </div>
+                            </div>
+                            <div class="address-main-card-lasto">
+                              <button class="address-main-card-lasto-btn">
+                                Edit</button
+                              ><button class="address-main-card-lasto-btn">
+                                Delete
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <div class="address-main-card-turu">
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  Unair Kampus C, Jalan Mulyorejo Mulyorejo,
+                                  Mulyorejo, Mulyorejo
+                                </div>
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  MULYOREJO, KOTA SURABAYA, JAWA TIMUR, ID,
+                                  60114
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="address-main-card-padtop address-main-card-lasto"
+                            >
+                              <button
+                                class="address-main-card-default address-main-card-default-sty address-main-card-default-bg"
+                              >
+                                Set as default
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="row"
+                            class="address-main-card-target address-main-card-children"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="address-main-card address-main-card-padding">
+                        <div class="address-main-card-width">
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <span
+                                class="address-main-card-font address-main-card-alignfont"
+                                ><div class="address-main-card-namae">
+                                  Humam
+                                </div></span
+                              >
+                              <div class="address-main-card-split"></div>
+                              <div
+                                role="row"
+                                class="address-main-card-whspc address-main-card-rgba address-main-card-children"
+                              >
+                                (+62) 82111633083
+                              </div>
+                            </div>
+                            <div class="address-main-card-lasto">
+                              <button class="address-main-card-lasto-btn">
+                                Edit</button
+                              ><button class="address-main-card-lasto-btn">
+                                Delete
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <div class="address-main-card-turu">
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  Wisper, Mulyorejo, Mulyorejo
+                                </div>
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  MULYOREJO, KOTA SURABAYA, JAWA TIMUR, ID,
+                                  542187
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="address-main-card-padtop address-main-card-lasto"
+                            >
+                              <button
+                                class="address-main-card-default address-main-card-default-sty address-main-card-default-bg"
+                              >
+                                Set as default
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="row"
+                            class="address-main-card-target address-main-card-children"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="address-main-card address-main-card-padding">
+                        <div class="address-main-card-width">
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <span
+                                class="address-main-card-font address-main-card-alignfont"
+                                ><div class="address-main-card-namae">
+                                  Naufal
+                                </div></span
+                              >
+                              <div class="address-main-card-split"></div>
+                              <div
+                                role="row"
+                                class="address-main-card-whspc address-main-card-rgba address-main-card-children"
+                              >
+                                (+62) 82111633083
+                              </div>
+                            </div>
+                            <div class="address-main-card-lasto">
+                              <button class="address-main-card-lasto-btn">
+                                Edit</button
+                              ><button class="address-main-card-lasto-btn">
+                                Delete
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <div class="address-main-card-turu">
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  Teratai, Bilbul, Tangsel
+                                </div>
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  Bilbul, KOTA TANGERANG SELATAN, BANTEN, ID,
+                                  11578
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="address-main-card-padtop address-main-card-lasto"
+                            >
+                              <button
+                                class="address-main-card-default address-main-card-default-sty address-main-card-default-bg"
+                              >
+                                Set as default
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="row"
+                            class="address-main-card-target address-main-card-children"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="address-main-card address-main-card-padding">
+                        <div class="address-main-card-width">
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <span
+                                class="address-main-card-font address-main-card-alignfont"
+                                ><div class="address-main-card-namae">
+                                  Nora
+                                </div></span
+                              >
+                              <div class="address-main-card-split"></div>
+                              <div
+                                role="row"
+                                class="address-main-card-whspc address-main-card-rgba address-main-card-children"
+                              >
+                                (+62) 82111633013
+                              </div>
+                            </div>
+                            <div class="address-main-card-lasto">
+                              <button class="address-main-card-lasto-btn">
+                                Edit</button
+                              ><button class="address-main-card-lasto-btn">
+                                Delete
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="heading"
+                            class="address-main-card-margin address-main-card-flex"
+                          >
+                            <div
+                              class="address-main-card-mar address-main-card-content"
+                            >
+                              <div class="address-main-card-turu">
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  Mulyorejo, BSD
+                                </div>
+                                <div
+                                  role="row"
+                                  class="address-main-card-children"
+                                >
+                                  SERPONG, KOTA TANGERANG SELATAN, BANTEN, ID,
+                                  15432
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="address-main-card-padtop address-main-card-lasto"
+                            >
+                              <button
+                                class="address-main-card-default address-main-card-default-sty address-main-card-default-bg"
+                              >
+                                Set as default
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            role="row"
+                            class="address-main-card-target address-main-card-children"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer-component></footer-component>
+  </body>
+</html>
